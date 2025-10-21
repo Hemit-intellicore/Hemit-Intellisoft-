@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy - Hemit Intellisoft Ltd</title>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0d0d0d;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      height: 60vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                  url('https://images.unsplash.com/photo-1516321310764-7986c2920216?auto=format&fit=crop&w=1950&q=80') no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: orange;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #FFFFFF;
+    }
+
+    .btn-custom {
+      background: orange;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: none;
+      font-weight: 600;
+      transition: all 0.3s;
+    }
+    .btn-custom:hover {
+      background: darkgreen;
+      color: white;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    /* Privacy Policy Section */
+    .privacy-section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .privacy-section h2 {
+      color: orange;
+      margin-bottom: 30px;
+    }
+    .privacy-section h3 {
+      color: white;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    .privacy-section p,
+    .privacy-section ul {
+      color: white;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .privacy-section ul {
+      padding-left: 20px;
+    }
+    .privacy-section a {
+      color: orange;
+      text-decoration: none;
+    }
+    .privacy-section a:hover {
+      color: darkgreen;
+    }
+
+    /* Cookie Consent Popup */
+    .cookie-modal .modal-content {
+      background: #111;
+      color: white;
+      border-radius: 12px;
+      border: 1px solid #333;
+    }
+    .cookie-modal .modal-header {
+      border-bottom: none;
+    }
+    .cookie-modal .modal-title {
+      color: orange;
+      font-weight: 600;
+    }
+    .cookie-modal .modal-body p {
+      color: white;
+      font-size: 0.9rem;
+    }
+    .cookie-modal .btn-custom {
+      margin: 0 5px;
+    }
+    .cookie-modal .btn-secondary {
+      background: #333;
+      border: none;
+      color: white;
+    }
+    .cookie-modal .btn-secondary:hover {
+      background: darkgreen;
+    }
+
+    footer {
+      background: #000;
+      color: #FFFFFF;
+      padding: 40px 0;
+      text-align: center;
+    }
+    footer a {
+      color: orange;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: darkgreen;
+    }
+    footer .active {
+      color: darkgreen;
+      font-weight: 600;
+    }
+
+    /* Ensure all paragraph text is white */
+    #privacy p {
+      color: #ffffff !important;
+    }
+
+
+    /* Brand text with smooth glow transition */
+    #brandText {
+      color: #ffa500;
+      transition: color 0.6s ease, text-shadow 0.6s ease;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Cookie Consent Modal -->
+  <div class="modal fade cookie-modal" id="cookieConsentModal" tabindex="-1" aria-labelledby="cookieConsentLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cookieConsentLabel">We Value Your Privacy</h5>
+        </div>
+        <div class="modal-body">
+          <p>We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. By clicking "Accept," you consent to our use of cookies. You can customize your preferences or learn more in our <a href="#privacy" onclick="dismissModal()">Privacy Policy</a>.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-custom" onclick="acceptCookies()">Accept</button>
+          <button type="button" class="btn btn-secondary" onclick="declineCookies()">Decline</button>
+          <a href="#privacy" class="btn btn-secondary" onclick="dismissModal()">Customize</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container" data-aos="zoom-in" data-aos-duration="1200">
+   
+      </a>
+      <h1>Privacy Policy</h1>
+      <p data-aos="fade-up" data-aos-delay="300">Your privacy is important to us. Learn how we protect your personal information.</p>
+      <div class="mt-3">
+        <a href="#privacy" class="btn btn-custom" data-aos="fade-up" data-aos-delay="600">Read Our Policy</a>
+        <a href="index.html" class="btn btn-custom ms-2" data-aos="fade-up" data-aos-delay="800">Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Privacy Policy Section -->
+  <section id="privacy" class="privacy-section">
+    <div class="container">
+      <h2 class="text-center" data-aos="fade-down">Privacy Policy</h2>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h3>Introduction</h3>
+        <p>At Hemit Intellisoft Ltd, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website (<a href="https://hemitintellisoft.com">www.hemitintellisoft.com</a>), use our services, or interact with us. By using our website or services, you agree to the terms of this Privacy Policy. We comply with the Nigeria Data Protection Regulation (NDPR) and, where applicable, the EU General Data Protection Regulation (GDPR).</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h3>Information We Collect</h3>
+        <p>We may collect the following types of information:</p>
+        <ul>
+          <li><strong>Personal Information</strong>: Name, email address, phone number, and other details you provide when filling out forms (e.g., contact or inquiry forms).</li>
+          <li><strong>Usage Data</strong>: Information about how you interact with our website, such as IP address, browser type, pages visited, and time spent.</li>
+          <li><strong>Cookies and Tracking Data</strong>: Data collected via cookies and similar technologies to enhance your browsing experience and analyze site performance.</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <h3>How We Use Your Information</h3>
+        <p>We use your information to:</p>
+        <ul>
+          <li>Provide, operate, and improve our services, such as web development, mobile apps, and AI solutions.</li>
+          <li>Respond to your inquiries and provide customer support.</li>
+          <li>Send promotional materials, updates, or newsletters (with your consent).</li>
+          <li>Analyze website usage to enhance user experience and optimize content.</li>
+          <li>Comply with legal obligations and protect our rights.</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="400">
+        <h3>Cookies and Tracking Technologies</h3>
+        <p>We use cookies to improve your experience on our website. Cookies are small files stored on your device that help us understand how you use our site. Upon visiting our website, you will be prompted to accept or decline cookies via our cookie consent popup. You can also manage cookie preferences through your browser settings. Disabling cookies may affect the functionality of our website. For more details, see our <a href="#privacy">Privacy Policy</a>.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="500">
+        <h3>Sharing Your Information</h3>
+        <p>We do not sell your personal information. We may share your data with:</p>
+        <ul>
+          <li><strong>Service Providers</strong>: Third-party vendors who assist us in delivering services (e.g., hosting, analytics).</li>
+          <li><strong>Legal Authorities</strong>: When required by law or to protect our rights and safety.</li>
+          <li><strong>Business Transfers</strong>: In the event of a merger, acquisition, or sale of assets.</li>
+        </ul>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="600">
+        <h3>Data Security</h3>
+        <p>We implement industry-standard security measures to protect your data, including encryption and secure servers. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="700">
+        <h3>Your Rights</h3>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access, correct, or delete your personal information.</li>
+          <li>Opt out of marketing communications.</li>
+          <li>Request information about how your data is used.</li>
+          <li>Restrict or object to certain data processing activities.</li>
+        </ul>
+        <p>To exercise these rights, contact us at <a href="mailto:info@hemitintellisoft.com">info@hemitintellisoft.com</a>.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="800">
+        <h3>GDPR Compliance</h3>
+        <p>Hemit Intellisoft Ltd complies with the General Data Protection Regulation (GDPR) for users in the European Economic Area (EEA). Our GDPR compliance includes:</p>
+        <ul>
+          <li><strong>Lawful Basis for Processing</strong>: We process personal data based on consent, contract performance, legal obligations, or legitimate interests (e.g., improving our services).</li>
+          <li><strong>Enhanced User Rights</strong>: EEA residents have the right to access, rectify, erase, restrict, or port their data, and to object to processing or automated decision-making.</li>
+          <li><strong>Data Protection Officer</strong>: We have appointed a Data Protection Officer (DPO) to oversee GDPR compliance. Contact our DPO at <a href="mailto:dpo@hemitintellisoft.com">dpo@hemitintellisoft.com</a>.</li>
+          <li><strong>Data Transfers</strong>: If we transfer data outside the EEA, we use Standard Contractual Clauses or other safeguards to ensure equivalent protection.</li>
+          <li><strong>Data Breach Notification</strong>: We will notify affected users and authorities within 72 hours of becoming aware of a data breach, as required by GDPR.</li>
+        </ul>
+        <p>To exercise your GDPR rights or for inquiries, contact us at <a href="mailto:info@hemitintellisoft.com">info@hemitintellisoft.com</a>.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="900">
+        <h3>NDPR Compliance</h3>
+        <p>As a Nigeria-based company, Hemit Intellisoft Ltd complies with the Nigeria Data Protection Regulation (NDPR). We ensure lawful data processing, obtain consent where required, and implement measures to protect your personal data in accordance with NDPR guidelines. For inquiries about NDPR compliance, contact us at <a href="mailto:info@hemitintellisoft.com">info@hemitintellisoft.com</a>.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="1000">
+        <h3>Third-Party Links</h3>
+        <p>Our website may contain links to third-party sites. We are not responsible for their privacy practices. Please review the privacy policies of those sites before sharing your information.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="1100">
+        <h3>Children’s Privacy</h3>
+        <p>Our services are not intended for individuals under 13. We do not knowingly collect personal information from children. If you believe we have collected such data, please contact us to have it removed.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="1200">
+        <h3>Changes to This Privacy Policy</h3>
+        <p>We may update this Privacy Policy periodically. Changes will be posted on this page with an updated effective date. We encourage you to review this policy regularly.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="1300">
+        <h3>Contact Us</h3>
+        <p>If you have questions about this Privacy Policy, please contact us:</p>
+        <ul>
+          <li>Email: <a href="mailto:info@hemitintellisoft.com">info@hemitintellisoft.com</a></li>
+          <li>Phone: <a href="tel:+2341234567890">+234 123 456 7890</a></li>
+          <li>Address: 123 Tech Street, Innovation City, Nigeria</li>
+        </ul>
+        <p><strong>Effective Date</strong>: October 20, 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-links mb-3">
+      <a href="privacy.html" class="active">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a> |
+      <a href="refund.html">Refund Policy</a> |
+      <a href="disclaimer.html">Disclaimer</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2025 Hemit Intellisoft. All Rights Reserved.</p>
+    <p>Powered by <a href="https://hemitintellisoft.com" target="_blank">Hemit Intellisoft Ltd.</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      offset: 100,
+    });
+  </script>
+  <script>
+    const logo = document.getElementById('reactiveLogo');
+    const brandText = document.getElementById('brandText');
+    const sections = document.querySelectorAll('section, header');
+
+    window.addEventListener('scroll', () => {
+      let found = false;
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2 && !found) {
+          const bgColor = window.getComputedStyle(sec).backgroundColor;
+          const brightness = getBrightness(bgColor);
+
+          if (brightness < 100) {
+            logo.style.filter = 'drop-shadow(0 0 8px #ffa500)';
+            brandText.style.color = '#ffa500';
+            brandText.style.textShadow = '0 0 10px rgba(255,165,0,0.7)';
+          } else {
+            logo.style.filter = 'drop-shadow(0 0 8px #28a745)';
+            brandText.style.color = '#28a745';
+            brandText.style.textShadow = '0 0 10px rgba(40,167,69,0.7)';
+          }
+          found = true;
+        }
+      });
+    });
+
+    function getBrightness(rgb) {
+      const match = rgb.match(/\d+/g);
+      if (!match) return 0;
+      const [r, g, b] = match.map(Number);
+      return (r * 299 + g * 587 + b * 114) / 1000;
+    }
+  </script>
+  <!-- Cookie Consent Script -->
+  <script>
+    // Show cookie modal if consent not given
+    window.onload = function() {
+      if (!localStorage.getItem('cookieConsent')) {
+        const cookieModal = new bootstrap.Modal(document.getElementById('cookieConsentModal'), {
+          backdrop: 'static',
+          keyboard: false
+        });
+        cookieModal.show();
+      }
+    };
+
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      // Enable analytics or other cookies here (e.g., Google Analytics)
+      // Example: window.dataLayer = window.dataLayer || []; window.dataLayer.push({'event': 'cookieConsent'});
+      bootstrap.Modal.getInstance(document.getElementById('cookieConsentModal')).hide();
+    }
+
+    function declineCookies() {
+      localStorage.setItem('cookieConsent', 'declined');
+      // Disable non-essential cookies (implement as needed)
+      bootstrap.Modal.getInstance(document.getElementById('cookieConsentModal')).hide();
+    }
+
+    function dismissModal() {
+      bootstrap.Modal.getInstance(document.getElementById('cookieConsentModal')).hide();
+    }
+  </script>
+</body>
+</html>
